@@ -12,11 +12,11 @@ Simulates the Hawk-Dove game with a genetic algorithm and saves the trajectories
 files (a training and a held-out set). The death rule is chosen with the `death_rule`
 variable at the top, either `"inverse"` or `"uniform"`.
 
-`Sensitivity_Analysis_1D_Synthetic_Monomials_v2.py`
+`SINDy_Synthetic.py`
 Runs the discovery pipeline on the synthetic data over a range of noise levels and writes
 the results table and the figures.
 
-`Sensitivity_Analysis_1D_monomials.py`
+`SINDy_GA.py`
 Runs the discovery pipeline on the genetic-algorithm data over a range of ensemble
 averages. The dataset (inverse or uniform death) is chosen with the `death_rule` variable
 at the top, which has to match the one used in `genetic_algorithm.py`.
@@ -25,8 +25,8 @@ at the top, which has to match the one used in `genetic_algorithm.py`.
 
 1. Run `genetic_algorithm.py` twice, once with `death_rule = "inverse"` and once with
    `"uniform"`, to generate the two GA datasets.
-2. Run `Sensitivity_Analysis_1D_Synthetic_Monomials_v2.py` for the synthetic results.
-3. Run `Sensitivity_Analysis_1D_monomials.py` for the GA results, once per death rule.
+2. Run `SINDy_Synthetic.py` for the synthetic results.
+3. Run `SINDy_GA.py` for the GA results, once per death rule.
 
 The genetic algorithm runs in parallel and takes a while. Each script writes its output to
 a `Results` folder in the working directory (set by `RESULTS_ROOT` at the top of the script).
