@@ -1,4 +1,4 @@
-# Data-Driven Discovery of Dynamics in Evolutionary Game Theory
+# TFM
 
 Code for the master's thesis. It applies SINDy to the Hawk-Dove game and recovers the
 macroscopic governing equation from trajectory data. Three datasets are used: synthetic
